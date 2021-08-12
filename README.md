@@ -33,7 +33,6 @@ The idea behind this exercise is that you:
 ## Contributions/Feedback 
 
 This is a new *implementation* of this exercise so there are bound to be some issues or areas of improvement. If you find
-something unsavory/ineffective/cantankerous please feel free to create an issue [here](https://github.com/caseyokane-8451/ujs-devops/issues)
-or reach out to me directly [here](mailto:casey.okane@8451.com).
+something unsavory/ineffective/cantankerous please feel free to create an issue.
 
 **Dziękuję** (thanks)
