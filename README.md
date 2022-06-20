@@ -10,11 +10,11 @@ For this section we're going to focus on simply writing something that runs (and
 1. We have a really basic Spring Boot project (created via the [intializr](https://start.spring.io/)) so let's run it
 locally
     ```
-    ./mvnw spring-boot:run
+    mvn spring-boot:run
     ```
 1. Now let's generate an artifact, since we'll need the artifact to host it in an environment where people can use it
     ```
-    ./mvnw clean package
+    mvn clean package
     ```
 1. Since we don't have a ton of time or Azure money lets just run the executable using Java on our own hosted server
 (just pretend your customer will have to join a Microsoft Teams call to use the application)
