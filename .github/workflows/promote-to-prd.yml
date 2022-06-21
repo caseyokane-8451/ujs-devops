@@ -1,7 +1,11 @@
 name: Promote app to production
 
 on:
-    workflow_dispatch
+    workflow_dispatch:
+#    workflow_run:
+#      workflows: [ Java CI with Maven ]
+#      types:
+#        - completed
 
 jobs:
   promote:
