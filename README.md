@@ -27,7 +27,7 @@ make things more repeatable, consistent, and reduce the amount of manual interve
     ```
       - name: Build with Maven
         run: |
-          ./mvnw -B package --file pom.xml
+          mvn -B package --file pom.xml
           mkdir artifacts && cp target/*.jar artifacts
 
       - name: Persist Artifacts
@@ -95,7 +95,7 @@ exist as part of the pipeline)
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
-        run: ./mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar package --file pom.xml
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar package --file pom.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
