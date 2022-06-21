@@ -94,7 +94,7 @@ as well as include the HEROKU_API_KEY secret that we created earlier
    
 ### Gotchas
 - If you're seeing self-signed cert issues you probably need to set an additional variable [as discussed here](https://devcenter.heroku.com/articles/using-the-cli#using-an-http-proxy)
-this will likely be found in your home directory in the `~/curl-ca-bundle.crt` file
+this will likely be found in your home directory in the `/Users/<username>/curl-ca-bundle.crt` file
 - If you notice an issue with the buildpack failing initially, it's because you need to clear them first (`heroku buildpacks:clear --app <app-name>`). You can see a 
 more detailed explaination [here](https://stackoverflow.com/questions/53050441/error-your-buildpacks-do-not-contain-the-heroku-jvm-buildpackadd-heroku-jvm-to).
 - Heroku only deploys code that you push to main/master. Pushing code to another branch of the heroku remote has no affect.
