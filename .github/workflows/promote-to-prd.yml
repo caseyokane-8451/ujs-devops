@@ -2,6 +2,8 @@ name: Promote app to production
 
 on:
     workflow_dispatch:
+    push:
+      branches: [ 3-configure ]
 #    workflow_run:
 #      workflows: [ Java CI with Maven ]
 #      types:
