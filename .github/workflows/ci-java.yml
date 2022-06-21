@@ -59,4 +59,4 @@ jobs:
       - name: Heroku deploy jar
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku deploy:jar devops-0.0.1-SNAPSHOT.jar --jdk 11 -a <INSERT_STG_APP_HERE>
+        run: heroku deploy:jar devops-0.0.1-SNAPSHOT.jar --jdk 11 -a udp-devops-2022-stg
